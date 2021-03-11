@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID</title>
+</head>
+<body>
+    <p id="color">Texto</p>
+
+    <button onclick="change('blue');">Cambiar Color</button>
+    <button onclick="change('red');">Cambiar Color 2</button>
+    <button onclick="change('black');">Cambiar Color 3</button>
+    <button onclick="change('yellow');">Cambiar Color 4</button>
+    <button onclick="change('green');">Cambiar Color 5</button>
+</body>
+
+<script>
+    function change(color1){
+        var e=document.getElementById('color');
+        e.style.color=color1;
+    }
+</script>
+
+</html>

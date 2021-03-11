@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2</title>
+</head>
+<body>
+    <p name="may">PARRAFO 1</p>
+    <p>Parrafo 2</p>
+    <p>Parrafo 3</p>
+    <p name="may">PARRAFO 4</p>
+    <p>Parrafo 5</p>
+
+    <input type="button" value="Contar P" onclick="count()">
+    <input type="button" value="Contar M" onclick="count_m()">
+</body>
+
+<script>
+    function count(){
+        var total=document.getElementsByTagName('p');
+        alert("Total de parrafos: "+total.length);
+    }
+
+    function count_m(){
+        var total_m=document.getElementsByName('may');
+        alert("Total de parrafos en mayusculas: "+total_m.length);
+    }
+</script>
+
+</html>
